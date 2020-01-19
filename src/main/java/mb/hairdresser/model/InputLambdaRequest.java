@@ -1,10 +1,24 @@
 package mb.hairdresser.model;
 
-public class InputLambdaRequest {
+import java.io.Serializable;
+
+public class InputLambdaRequest implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
 	private String name;
 	private String value;
 	
+	public InputLambdaRequest() {
+		super();
+	}
 	
+	public InputLambdaRequest(String name, String value) {
+		super();
+		this.name = name;
+		this.value = value;
+	}
+
 	public String getName() {
 		return name;
 	}
