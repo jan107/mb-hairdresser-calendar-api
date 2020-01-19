@@ -39,6 +39,7 @@
 	</build>
 
 	<dependencies>
+	<!-- 
 		<dependency>
 			<groupId>com.google.apis</groupId>
 			<artifactId>google-api-services-calendar</artifactId>
@@ -50,6 +51,7 @@
 			<artifactId>google-oauth-client-jetty</artifactId>
 			<version>${project.oauth.version}</version>
 		</dependency>
+	-->
 
 		<!-- lambda function -->
 		<dependency>
@@ -99,11 +101,18 @@
 			<version>2.10.0</version>
 		</dependency>
 
+		 <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-dynamodb</artifactId>
+            <version>${aws.java.sdk.version}</version>
+        </dependency>
+        
 	</dependencies>
 
 	<properties>
 		<project.http.version>1.23.0</project.http.version>
 		<project.oauth.version>1.23.0</project.oauth.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<aws.java.sdk.version>[1.11.89, 2.0.0)</aws.java.sdk.version>
 	</properties>
 </project>

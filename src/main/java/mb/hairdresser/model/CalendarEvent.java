@@ -2,7 +2,8 @@ package mb.hairdresser.model;
 
 import java.io.Serializable;
 
-import com.google.api.client.util.DateTime;
+import org.joda.time.DateTime;
+
 
 public class CalendarEvent implements Serializable {
 
